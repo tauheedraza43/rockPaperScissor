@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Rock|Scissor|Paper </title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" >
+	<link rel="stylesheet" href="css/style.css" >
+</head>
+<body>
+    	
+	
+    <div id="container" class="container">
+        
+        <header>
+            <h1>Gaming Zone</h1>
+            <h2>Rock|Paper|Scissor</h2>
+            <h3><span>Rule: </span> You Have Only 3 Points To Win This Match Otherwise You Will Lost... </h3>
+        </header>
+
+        <div style="position:relative;">
+        <div class="user">
+            <p>Player: <span id="userName"></span></p>
+            <p>Points: <span id="userPoints">0</span></p>
+            <p id="userDisplay">Your Defender</p>
+        </div>
+        
+		<div class="pc">
+            <p>Player: <span>Computer</span></p>
+            <p>Points: <span id="pcPoints">0</span></p>
+            <p id="display"></p>
+        </div>
+        </div>
+		
+		
+        <div class="btn-box">
+            <button id="rock" class="btn btn-danger  " onclick="myFunction('Rock')">
+                <img src="images/rock.png" alt=""><br>Rock
+            </button>
+            <button id="paper" class="btn btn-danger" onclick="myFunction('Paper')">
+                <img src="images/paper.png" alt=""><br>Paper
+            </button>
+            <button id="secisor" class="btn btn-danger" onclick="myFunction('Scissor')">
+                <img src="images/scissor.png" alt=""><br>Scissor
+            </button>
+        </div>
+    </div>
+
+	
+		<!-- after click continue and result -->
+		<div id="result" class="result-hidden">
+			<p>Select Your Defender...!!</p>
+			<button class="btn btn-success" onclick="gameContinue()" >Continue</button>
+		</div>
+
+        <div id="result-board" class="result-hidden">
+            <p>Select Your Defender...!!</p>
+		</div>
+	
+<script src="js/app.js"></script>
+</body>
+
+<footer >
+        <p>Design & Developed By | <a href="https://github.com/tauheedraza43" >TauHeeD_RaZa</a> | 
+            <br>
+            Roll No:5209 , Batch: 4.1, &nbsp <span id="bright">Bright</span> 
+        </p>
+    </footer>
+</html> 
